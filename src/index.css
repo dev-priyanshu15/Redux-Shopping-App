@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.nav_bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: darkblue;
+}
+
+/* .btn{
+  background-color:#ffca2c;
+  border-color: black;
+  touch-action: auto;
+  border-radius: 10px;
+  box-shadow: #ffca2c;
+  mask-border-outset: 10px;
+} */
+/* import karliye bootstrap np i bootstrap kiyye phir index.jsx me past or navbar me use kiye hai to waha karlie */
