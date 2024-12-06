@@ -16,6 +16,11 @@ import {addToCart, selecCartItems} from '../redux/cartSlice'
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+/**
+ * Renders a product listing page with a grid of product cards.
+ * Each card displays product information and provides an "Add to Cart" functionality.
+ * @returns {JSX.Element} A div containing a grid of product cards with add to cart functionality.
+ */
 const Product = () => {
     const dispatch=useDispatch()
     const cartItem=useSelector(selecCartItems)
