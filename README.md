@@ -1,9 +1,68 @@
-# React + Vite
+# Redux Shopping Cart App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce shopping cart application built with React, Redux Toolkit, and Vite.
 
-Currently, two official plugins are available:
+Live demo: [redux-shopping-app-nine.vercel.app](https://redux-shopping-app-nine.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-link to the given project: redux-shopping-app-nine.vercel.app
+## Features
+
+- Product catalog with detailed product information
+- Shopping cart functionality
+  - Add/remove items
+  - Adjust quantities
+  - Calculate totals
+- Responsive navigation bar with cart summary
+- State management using Redux Toolkit
+- Fast refresh and HMR support through Vite
+
+## Technology Stack
+
+- [React](https://reactjs.org/) - UI Framework
+- [Redux Toolkit](https://redux-toolkit.js.org/) - State Management
+- [Vite](https://vitejs.dev/) - Build Tool
+- [SWC](https://swc.rs/) - Fast Refresh via @vitejs/plugin-react-swc
+
+## Project Structure
+
+```
+src/
+├── Components/
+│   ├── Cart.jsx       # Shopping cart component
+│   ├── Counter.jsx    # Quantity counter component
+│   ├── Navbar.jsx     # Navigation bar component
+│   └── Product.jsx    # Product display component
+├── redux/
+│   ├── cartSlice/     # Cart state management
+│   ├── counterSlice/  # Counter state management
+│   └── store/         # Redux store configuration
+├── App.jsx            # Main application component
+├── data.js           # Product data
+└── main.jsx          # Application entry point
+```
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
