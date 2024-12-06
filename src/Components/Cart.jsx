@@ -8,6 +8,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
+/**
+ * Renders the shopping cart component
+ * @returns {JSX.Element} The rendered Cart component
+ */
 const Cart = () => {
     const dispatch = useDispatch();
     const cartItem = useSelector(selecCartItems)
